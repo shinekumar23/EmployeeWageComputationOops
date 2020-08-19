@@ -1,6 +1,6 @@
 package com.company;
 
-public class EmployeeWageBuilder {
+public class EmployeeWageBuilder implements InEmployeeWageOops {
     public static final int IS_PART_TIME = 1;
     public static final int IS_FULL_TIME = 2;
     private int numOfCompany = 0;

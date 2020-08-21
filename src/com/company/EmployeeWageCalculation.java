@@ -17,12 +17,13 @@ public class EmployeeWageCalculation implements InEmployeeWageOops {
     public void dailWage() {
         dailyWage.add(daySalary);
     }
-
+    @Override
     public void addCompanyEmpWage(String company, int empRatePerHr, int numberOfWorkingDays, int maxHrPerMonth) {
         CompanyEmpWage companyEmpWage = new CompanyEmpWage(company, empRatePerHr, numberOfWorkingDays, maxHrPerMonth);
         companyEmpWageArrayList.add(companyEmpWage);
         companyEmpWageMap.put(company, companyEmpWage);
     }
+    @Override
     public void computeEmpWage(){
         for (int i = 0; i < companyEmpWageArrayList.size(); i++) {
             CompanyEmpWage companyEmpWage = companyEmpWageArrayList.get(i);
